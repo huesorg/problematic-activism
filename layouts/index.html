@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<!-- Two columns -->
+<div class="flex-none md:flex">
+	<div class="md:w-1/2 lg:pl-12 md:ml-12 order-2">
+		<img 
+			src="/img/problematic-activism-cover-sam-killermann-960w.jpg" 
+			srcset="
+				/img/problematic-activism-cover-sam-killermann-480w.jpg 480w, 
+				/img/problematic-activism-cover-sam-killermann-960w.jpg 960w,
+				/img/problematic-activism-cover-sam-killermann-1440w.jpg 1440w" 
+			alt="Cover of book, Problematic Activism: Transitioning from Dogma & Disposability to Living Social Justice"/>
+	</div>
+	<div class="md:w-1/2 p-12 order-1 md:ml-12 items-center content-center flex">
+		<div class="lg:pl-12">
+			<h1 class="font-black text-lg text-red-700 uppercase leading-none mb-6">Coming Soon: Problematic Activism by Sam Killermann</h1>
+			<p class="font-black text-gray-700 mb-8 text-4xl lg:text-5xl leading-none">Be the first to hear when the book is available for preorder.</p>
+
+			<form action="https://app.convertkit.com/forms/1274324/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="1274324" data-uid="a468bcb4ac" data-version="5" min-width="400" _lpchecked="1">
+				<div class="flex flex-wrap">
+					<div class="w-1/2 mt-4">
+						<label for="fields[first_name]" class="sr-only">First Name:</label>
+						<div class="mr-4">
+							<input type="text" class="appearance-none block w-full bg-gray-200 placeholder-gray-700 tracking-wider text-gray-900 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" aria-label="Your first name" name="fields[first_name]" placeholder="Your first name">
+						</div>
+					</div>
+					<div class="w-1/2 mt-4">
+						<input type="text" class="appearance-none block w-full bg-gray-200 placeholder-gray-700 tracking-wider text-gray-800 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" name="email_address" placeholder="Your email address" required="">
+					</div>
+					<div class="w-full mt-4">
+						<button data-element="submit" class="appearance-none tracking-widest block w-full bg-red-700 text-gray-100  font-black uppercase text-center rounded py-3 px-4 leading-tight hover:bg-red-500">Subscribe</button>
+					</div>
+					
+				</div>
+			</form>
+		</div>
+		
+	</div>
+</div>
+
+{{ end }}
