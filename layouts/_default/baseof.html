@@ -9,7 +9,7 @@
 	{{ hugo.Generator }}
 	<meta name="ROBOTS" content="INDEX, FOLLOW">
 {{- if .Site.IsServer }}
-	{{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
+	{{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
 	<link rel="stylesheet" href="{{ $style.Permalink }}" data> 
 {{- else }}
 	{{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint }}
@@ -26,12 +26,12 @@
 	<link rel="stylesheet" href="https://use.typekit.net/zcp7vwm.css">
 </head>
 
-<body class="text-gray-900 bg-gray-100">
-	<!-- {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }} -->
+<body class="text-yellow-800 bg-yellow-200">
+	{{ block "header" . }}{{ partial "full-header.html" .}}{{ end }}
 	<main role="main">
 		{{ block "main" . }}{{ end }}
 	</main>
-	<!-- {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }} -->
+	{{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
 	{{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 </body>
 

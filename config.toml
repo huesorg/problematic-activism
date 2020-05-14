@@ -4,7 +4,7 @@ title = "Problematic Activism"
 enableRobotsTXT = true
 canonifyURLs = true
 summaryLength = 40
-# enableGitInfo = true
+enableGitInfo = true
 theme = "seostarter"
 
 [markup]
@@ -22,3 +22,4 @@ theme = "seostarter"
 	twitter = ""
 	instagram = ""
 	github = ""
+
